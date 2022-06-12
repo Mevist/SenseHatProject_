@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="IoS.System.Android">
+    <!-- Allows applications to access information about networks -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Allows applications to open network sockets. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Android"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lab_06"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.lab_am.Android.Joystick"></activity>
+        <activity android:name="com.lab_am.Android.MeasurementList" />
+        <activity android:name="com.lab_am.Android.Graphpht" />
+        <activity android:name="com.lab_am.Android.Led" />
+        <activity android:name="com.lab_am.Android.Graph" />
+        <activity android:name="com.lab_am.Android.Settings" />
+        <activity android:name="com.lab_am.Android.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
